@@ -26,9 +26,9 @@ const Brand = () => {
               <span className="font-bold text-gray-700 text-3xl">many</span>
             </p>
           </div>
-          <div className="overflow-hidden">
-            <div className="relative overflow-hidden w-full">
-              <div className="flex overflow-hidden whitespace-nowrap">
+          <div className="w-[90%]">
+            <div className="relative w-full overflow-x-hidden">
+              <div className="flex whitespace-nowrap">
                 <motion.div
                   className="flex"
                   animate={{
@@ -44,7 +44,7 @@ const Brand = () => {
                     {[...Array(6)].map(() =>
                       logos.map((logo, index) => (
                         <Image
-                          key={`first-${logo.name}-${index}-${Math.random()}`}
+                          key={`first-${logo.name}-${index}`}
                           src={logo.path}
                           alt={`${logo.name} logo`}
                           width={100}
