@@ -1,36 +1,29 @@
+import { Category } from "@/data/category";
 import Image from "next/image";
 import Link from "next/link";
 
-export interface Project {
-  id: number;
-  title: string;
-  category: "Photo/Video";
-  imageUrl: string;
-  projectUrl: string;
-}
-
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({ project }: { project: any }) => {
   return (
     <Link
-      href={project.projectUrl}
-      className="group block relative overflow-hidden rounded-2xl"
+      href={`/work/${project?.name?.toLowerCase() ?? ""}`}
+      className="group block relative overflow-hidden rounded-2xl  max-w-[800px] max-h-[400px]"
     >
       <Image
         src={project.imageUrl}
-        alt={`Project: ${project.title}`}
+        alt={`Project: ${project.name}`}
         width={800}
-        height={600}
+        height={400}
         className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
       <div className="absolute top-4 left-4">
         <span className="bg-black/50 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
-          {project.category}
+          {project.name}
         </span>
       </div>
       <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
         <div className="flex justify-between items-end">
-          <p className="text-sm font-medium">{project.title}</p>
+          {/* <p className="text-sm font-medium">{project.title}</p> */}
           <div className="flex items-center gap-1 text-sm font-semibold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
             <span>View Project</span>
             <span className="text-lg">▸</span>

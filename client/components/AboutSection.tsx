@@ -40,9 +40,9 @@ const AboutSection = () => {
             className="flex flex-col items-center lg:items-start order-last lg:order-first lg:w-auto"
           >
             <div className="relative">
-              <div className="relative overflow-hidden rounded-3xl shadow-lg">
+              <div className="relative overflow-hidden rounded-3xl shadow-lg max-w-[500px] max-h-[600px]">
                 <Image
-                  src="/ava.avif"
+                  src="/CLZ-S_S2025/campaign-2.avif"
                   alt="Portrait of vsn Lange"
                   width={500}
                   height={600}
@@ -68,10 +68,10 @@ const AboutSection = () => {
               </div>
 
               <div className="mt-6 text-left">
-                <h3 className="text-2xl font-bold">vsn lange</h3>
-                <p className="text-gray-500">
+                <h3 className="text-2xl font-bold">ArtSchool Reject</h3>
+                {/* <p className="text-gray-500">
                   photographer, filmmaker, creative
-                </p>
+                </p> */}
               </div>
             </div>
           </motion.div>
@@ -84,27 +84,31 @@ const AboutSection = () => {
             className="flex flex-col gap-6 text-lg text-gray-800 order-first lg:order-last lg:w-1/2"
           >
             <p>
-              I picked up a camera over a decade ago — and never looked back.
+              ASR ArtSchool Reject is an independent creative collective of
+              young filmmakers, photographers, and designers known for our bold
+              aesthetics, conceptual depth, and distinct visual language.
             </p>
             <p>
-              What started with film stills for the feeling grew into cinematic
-              videos, campaigns, and branded storytelling. I move between
-              photography, filmmaking, and creative direction—always chasing the
-              best way to tell each story.
+              With a modern creative mindset and an experimental artistic
+              spirit, we produce emotionally resonant works ranging from music
+              videos and fashion campaigns to brand content and conceptual art
+              projects.
             </p>
             <p>
-              Being a modern renaissance creator means pushing creative
-              boundaries.
+              Unbound by conventional styles, we approach each project with a
+              unique point of view blending technical expertise, visual
+              direction, and an understanding of brand context to deliver
+              meaningful and memorable visuals.
             </p>
             <p>
-              From cinematic portraits to punchy reels and full campaigns, I aim
-              to build work that feels distinct—something that breaks the scroll
-              and makes you pause.
+              From concept development to post-production, we manage the
+              creative process with a strong focus on storytelling, tone, and
+              visual impact.
             </p>
-            <p>Details matter because they carry intention.</p>
             <p>
-              Every frame, every edit, every beat has to serve the story. If it
-              doesn't, it doesn't stay.
+              ASR is more than a crew; we are emerging visual creatives,
+              dedicated to shaping unique, expressive identities for every story
+              we help bring to life.
             </p>
           </motion.div>
         </div>

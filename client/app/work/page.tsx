@@ -1,38 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import ContactSection from "@/components/ContactSection";
-import ProjectCard, { Project } from "@/components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import React from "react";
-const allProjects: Project[] = [
-  {
-    id: 1,
-    title: "airasia / american tourister",
-    category: "Photo/Video",
-    imageUrl: "/anh.avif",
-    projectUrl: "/work/airasia",
-  },
-  {
-    id: 2,
-    title: "aape",
-    category: "Photo/Video",
-    imageUrl: "/anh.avif",
-    projectUrl: "/work/aape",
-  },
-  {
-    id: 3,
-    title: "salomon / brand campaign",
-    category: "Photo/Video",
-    imageUrl: "/anh.avif",
-    projectUrl: "/work/salomon",
-  },
-  {
-    id: 4,
-    title: "ferrari",
-    category: "Photo/Video",
-    imageUrl: "/anh.avif",
-    projectUrl: "/work/ferrari",
-  },
-];
+import { categories } from "@/data/category";
 
 const Work = () => {
   return (
@@ -61,7 +32,7 @@ const Work = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-8"
             >
-              {allProjects.map((project, index) => (
+              {categories.map((project, index) => (
                 <motion.div
                   key={project.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -74,7 +45,7 @@ const Work = () => {
             </motion.div>
           </div>
         </section>
-        <ContactSection />
+        {/* <ContactSection /> */}
       </main>
     </>
   );

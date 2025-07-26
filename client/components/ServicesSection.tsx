@@ -30,7 +30,6 @@ const toolboxIcons: Tool[] = [
   { name: "DaVinci Resolve", icon: SiDavinciresolve },
   { name: "Lightroom", icon: SiAdobelightroom },
   { name: "InDesign", icon: SiAdobeindesign },
-  { name: "Notion", icon: SiNotion },
 ];
 
 const servicesList: Service[] = [
@@ -39,7 +38,6 @@ const servicesList: Service[] = [
   { name: "Video Editing & Motion Design", icon: FiMonitor },
   { name: "Color Grading & Lookbuilding", icon: TbColorPicker },
   { name: "Photography & Retouching", icon: FiCamera },
-  { name: "Sound Design & Audio Polish", icon: BsDisc },
   { name: "Design & Layout for Print/Digital", icon: FiLayout },
 ];
 
