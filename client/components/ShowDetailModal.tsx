@@ -1,6 +1,6 @@
 import { projectData } from "@/data/projectData";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const ShowDetailModal = ({
   id,
@@ -11,7 +11,6 @@ const ShowDetailModal = ({
 }) => {
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = React.useState(0);
-
   const project = React.useMemo(
     () => projectData.find((proj) => proj.id === id),
     [id]
@@ -23,7 +22,20 @@ const ShowDetailModal = ({
         .filter((url): url is string => url !== null) || [],
     [project]
   );
-
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSelectedImage("1");
+        setCurrentIndex(0);
+      }
+    };
+    if (window.innerWidth < 768) {
+      setSelectedImage("1");
+      setCurrentIndex(0);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
@@ -59,7 +71,7 @@ const ShowDetailModal = ({
             {selectedImage ? (
               <>
                 <button
-                  className="absolute left-6 top-1/2 z-10 bg-white rounded-full p-3 w-12 h-12 shadow-lg hover:bg-gray-100"
+                  className="absolute left-6 top-1/2 z-10 bg-white/20 backdrop-blur-sm rounded-full p-3 w-12 h-12 shadow-lg hover:bg-white/30 transition-all border border-white/10"
                   onClick={() =>
                     setCurrentIndex(
                       (prev) => (prev - 1 + images.length) % images.length
@@ -78,7 +90,7 @@ const ShowDetailModal = ({
                   />
                 </div>
                 <button
-                  className="absolute right-6 top-1/2 z-10 bg-white rounded-full p-3 w-12 h-12 shadow-lg hover:bg-gray-100"
+                  className="absolute right-6 top-1/2 z-10 bg-white/20 backdrop-blur-sm rounded-full p-3 w-12 h-12 shadow-lg hover:bg-white/30 transition-all border border-white/10"
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % images.length)
                   }

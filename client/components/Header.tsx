@@ -8,8 +8,8 @@ const Header = () => {
   const pathname = usePathname();
   const { openModal } = useModal();
   return (
-    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-center bg-white/70 backdrop-blur-md rounded-full px-6 py-3 shadow-lg border border-gray-200/80">
+    <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] sm:w-auto">
+      <div className="flex items-center justify-center bg-white/70 backdrop-blur-md rounded-full px-6 py-3 shadow-lg border border-gray-200/80">
         <Link href="/" className="flex items-center space-x-3 mr-6">
           <Image
             src="/logo.png"
