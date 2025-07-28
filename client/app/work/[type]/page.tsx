@@ -114,36 +114,57 @@ const ProjectDetail = () => {
           transition={{ duration: 0.6, delay: 1 }}
           className="max-w-[1200px] mx-auto px-4 pb-24 flex justify-center items-center"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-full">
-            {projectData
-              .filter((project) => project.category.toLowerCase() === type)
-              .map((a, index) => (
-                <div
-                  key={index}
-                  className="aspect-square overflow-hidden relative group"
-                  onClick={() => setDetails(a.id)}
-                >
-                  <Image
-                    src={a.firstImage}
-                    alt={`Project gallery image ${index + 1}`}
-                    width={1200}
-                    height={1200}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    priority={index < 6}
-                  />
-                  {/* Add overlay div */}
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="flex justify-between items-end">
-                      <div className="flex items-center gap-2 text-base font-semibold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                        <span>View Project</span>
-                        <span className="text-xl">▸</span>
+          {type === "video" ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-6xl">
+              {projectData
+                .filter((project) => project.category.toLowerCase() === type)[0]
+                .link.map((video, index) => (
+                  <div key={index} className="w-full">
+                    <iframe
+                      width="100%"
+                      height="315"
+                      src={`https://www.youtube.com/embed/${video?.url}`}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full rounded-lg shadow-lg aspect-video"
+                    />
+                  </div>
+                ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 max-w-full">
+              {projectData
+                .filter((project) => project.category.toLowerCase() === type)
+                .map((a, index) => (
+                  <div
+                    key={index}
+                    className="aspect-square overflow-hidden relative group"
+                    onClick={() => setDetails(a.id)}
+                  >
+                    <Image
+                      src={a.firstImage}
+                      alt={`Project gallery image ${index + 1}`}
+                      width={1200}
+                      height={1200}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      priority={index < 6}
+                    />
+                    {/* Add overlay div */}
+                    <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <div className="flex justify-between items-end">
+                        <div className="flex items-center gap-2 text-base font-semibold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                          <span>View Project</span>
+                          <span className="text-xl">▸</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-          </div>
+                ))}
+            </div>
+          )}
         </motion.section>
 
         <motion.section

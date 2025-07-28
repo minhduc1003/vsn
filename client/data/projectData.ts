@@ -304,4 +304,34 @@ export const projectData = [
     description:
       "A pioneering project that sets new standards in architectural innovation and sustainability.",
   },
+  {
+    id: 1982371,
+    name: "Video",
+    link: [
+      {
+        type: "video",
+        url: "q498552eGlE",
+      },
+      {
+        type: "video",
+        url: "4sQCq3QJDv8",
+      },
+      {
+        type: "video",
+        url: "OLkA65yJ8So",
+      },
+      {
+        type: "video",
+        url: "76zR6NmU2MU",
+      },
+      {
+        type: "video",
+        url: "HOppd0XUe1A",
+      },
+    ],
+    firstImage: "/WALKING-on-the-Edge-X-LEFTHAND/Press-1.avif",
+    category: "Video",
+    description:
+      "An architectural project that harmonizes modern design with environmental sustainability.",
+  },
 ];
