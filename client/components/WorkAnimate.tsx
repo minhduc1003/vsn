@@ -78,11 +78,13 @@ const WorkAnimate = () => {
         <motion.div
           className="flex items-center justify-between mb-12"
           style={{
-            opacity: scrollYProgress >= 0.3 ? 1 : 0,
-            transform: `translateX(${
-              scrollYProgress >= 0.3 ? "0px" : "-100px"
-            })`,
-            transition: "opacity 0.5s, transform 0.5s",
+            opacity: screenWidth < 768 ? 1 : scrollYProgress >= 0.3 ? 1 : 0,
+            transform:
+              screenWidth < 768
+                ? "none"
+                : `translateX(${scrollYProgress >= 0.3 ? "0px" : "-100px"})`,
+            transition:
+              screenWidth < 768 ? "none" : "opacity 0.5s, transform 0.5s",
           }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
@@ -133,7 +135,13 @@ const WorkAnimate = () => {
               }}
             >
               <Link
-                href={scrollYProgress === 1 ? project.name.toLowerCase() : ""}
+                href={
+                  screenWidth < 768
+                    ? `work/${project.name.toLowerCase()}`
+                    : scrollYProgress === 1
+                    ? `work/${project.name.toLowerCase()}`
+                    : ""
+                }
                 className="group block relative overflow-hidden rounded-2xl max-w-[800px] max-h-[500px]"
               >
                 <Image
@@ -144,17 +152,31 @@ const WorkAnimate = () => {
                   className={`
                   w-full h-full object-cover 
                   transition-transform duration-500 ease-in-out
-                   ${scrollYProgress === 1 ? "group-hover:scale-105" : ""}
+                   ${
+                     screenWidth < 768
+                       ? "group-hover:scale-105"
+                       : scrollYProgress === 1
+                       ? "group-hover:scale-105"
+                       : ""
+                   }
                   `}
                 />
                 <div
                   className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent  duration-300 ${
-                    scrollYProgress === 0 ? "opacity-0" : ""
+                    screenWidth < 768
+                      ? ""
+                      : scrollYProgress === 0
+                      ? "opacity-0"
+                      : ""
                   }`}
                 ></div>
                 <div
                   className={`absolute top-4 left-4  duration-300 ${
-                    scrollYProgress === 0 ? "opacity-0" : ""
+                    screenWidth < 768
+                      ? ""
+                      : scrollYProgress === 0
+                      ? "opacity-0"
+                      : ""
                   }`}
                 >
                   <span className="bg-black/50 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
@@ -163,7 +185,11 @@ const WorkAnimate = () => {
                 </div>
                 <div
                   className={`absolute bottom-0 left-0 right-0 p-5 text-white  duration-300 ${
-                    scrollYProgress === 0 ? "opacity-0" : ""
+                    screenWidth < 768
+                      ? ""
+                      : scrollYProgress === 0
+                      ? "opacity-0"
+                      : ""
                   }`}
                 >
                   <div className="flex justify-between items-end">
@@ -172,7 +198,11 @@ const WorkAnimate = () => {
                       className={`
                   flex items-center gap-1 text-sm font-semibold 
                   translate-y-2 ${
-                    scrollYProgress === 1 ? "group-hover:translate-y-0" : ""
+                    screenWidth < 768
+                      ? "group-hover:translate-y-0"
+                      : scrollYProgress === 1
+                      ? "group-hover:translate-y-0"
+                      : ""
                   }
                   transition-all duration-300
                   `}

@@ -15,8 +15,8 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
           <div className="relative order-2 sm:order-1 lg:col-span-2">
-            <div className="absolute top-20  right-0 bg-white w-[70%]">
-              <div className="mt-4 text-base md:text-lg text-gray-800 leading-relaxed">
+            <div className="absolute top-20  right-0 bg-white w-[70%] hidden md:block">
+              <div className="mt-4 text-base  text-gray-800 leading-relaxed">
                 <span
                   className="font-bold text-7xl float-left mr-3"
                   style={{ lineHeight: "0.8" }}
@@ -41,7 +41,7 @@ const AboutSection = () => {
                 alt="Art School Reject - Behind the scenes"
                 width={700}
                 height={400}
-                className="w-full h-[550px] object-cover"
+                className="w-full h-[550px] object-cover rounded-xl"
               />
               <p className="mt-3 font-bold text-sm tracking-widest">
                 artschool REJECT
@@ -56,7 +56,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="lg:mt-12 order-1 sm:order-2"
           >
-            <h2 className="text-5xl flex flex-col md:text-5xl font-bold">
+            <h2 className="text-5xl flex flex-col md:text-5xl font-bold text-right md:text-left">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -98,7 +98,33 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
               viewport={{ once: true }}
-              className="mt-10 space-y-2 text-lg text-justify text-gray-700 leading-relaxed"
+              className="block md:hidden"
+            >
+              <div className="mt-4 text-lg text-gray-800 leading-relaxed text-justify  ">
+                <span
+                  className="font-bold text-7xl float-left mr-3"
+                  style={{ lineHeight: "0.8" }}
+                >
+                  A
+                </span>
+                <p>SR</p>
+                rtSchool Reject is an independent creative collective of young
+                filmmakers, photographers, and designers known for our bold
+                aesthetics, conceptual depth, and distinct visual language.
+              </div>
+              <p className="my-2 text-lg  text-gray-800 leading-relaxed clear-left text-justify ">
+                With a modern creative mindset and an experimental artistic
+                spirit, we produce emotionally resonant works ranging from music
+                videos and fashion campaigns to brand content and conceptual art
+                projects.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              viewport={{ once: true }}
+              className=" space-y-2 text-lg text-justify text-gray-700 leading-relaxed"
             >
               <p>
                 Unbound by conventional styles, we approach each project with a
