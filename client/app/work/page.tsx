@@ -17,7 +17,7 @@ const Work = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-4">
+              <h1 className="text-6xl md:text-[65px] font-bold tracking-tighter leading-[45px]">
                 RECENT WORK
               </h1>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">

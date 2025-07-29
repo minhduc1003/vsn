@@ -15,7 +15,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
           <div className="relative order-2 sm:order-1 lg:col-span-2">
-            <div className="absolute top-6  right-0 bg-white w-[50%]">
+            <div className="absolute top-20  right-0 bg-white w-[70%]">
               <div className="mt-4 text-base md:text-lg text-gray-800 leading-relaxed">
                 <span
                   className="font-bold text-7xl float-left mr-3"
@@ -41,7 +41,7 @@ const AboutSection = () => {
                 alt="Art School Reject - Behind the scenes"
                 width={700}
                 height={400}
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[550px] object-cover"
               />
               <p className="mt-3 font-bold text-sm tracking-widest">
                 artschool REJECT

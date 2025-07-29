@@ -18,7 +18,7 @@ export const categories = [
   {
     id: 3,
     type: "Photo",
-    name: "PhotoBooth",
+    name: "Lookbook",
     description:
       "Fashion imagery curated by concept – honoring the brand identity through intentional layouts, lighting, and compelling visual narratives.",
     imageUrl: "/LIL-VAN/Press-1.avif",
