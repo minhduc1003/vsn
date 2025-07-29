@@ -11,109 +11,116 @@ const socialLinks = [
 
 const AboutSection = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="py-24"
-    >
-      <div className="max-w-[1200px] mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl md:text-6xl font-bold tracking-tight mb-16 text-left"
-        >
-          <span className="text-gray-500">A modern renaissance approach</span>
-          <br />
-          to visual storytelling.
-        </motion.h2>
-
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-start justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col items-center lg:items-start order-last lg:order-first lg:w-auto"
-          >
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-3xl shadow-lg max-w-[500px] max-h-[600px]">
-                <Image
-                  src="/CLZ-S_S2025/campaign-2.avif"
-                  alt="Portrait of vsn Lange"
-                  width={500}
-                  height={600}
-                  className="w-auto h-auto object-cover"
-                />
-
-                <div className="absolute bottom-4 right-4 bg-black/40 backdrop-blur-sm p-2 rounded-full">
-                  <div className="flex items-center gap-4 px-2">
-                    {socialLinks.map((link) => (
-                      <Link
-                        key={link.name}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white/80 hover:text-white transition-colors"
-                        aria-label={link.name}
-                      >
-                        <link.icon className="text-xl" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+    <section className="bg-white py-16 md:py-24 border-t border-gray-200">
+      <div className="container mx-auto px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
+          <div className="relative order-2 sm:order-1 lg:col-span-2">
+            <div className="absolute top-6  right-0 bg-white w-[50%]">
+              <div className="mt-4 text-base md:text-lg text-gray-800 leading-relaxed">
+                <span
+                  className="font-bold text-7xl float-left mr-3"
+                  style={{ lineHeight: "0.8" }}
+                >
+                  A
+                </span>
+                <p>SR</p>
+                rtSchool Reject is an independent creative collective of young
+                filmmakers, photographers, and designers known for our bold
+                aesthetics, conceptual depth, and distinct visual language.
               </div>
-
-              <div className="mt-6 text-left">
-                <h3 className="text-2xl font-bold">ArtSchool Reject</h3>
-                {/* <p className="text-gray-500">
-                  photographer, filmmaker, creative
-                </p> */}
-              </div>
+              <p className="mt-6 text-base md:text-lg text-gray-800 leading-relaxed clear-left">
+                With a modern creative mindset and an experimental artistic
+                spirit, we produce emotionally resonant works ranging from music
+                videos and fashion campaigns to brand content and conceptual art
+                projects.
+              </p>
             </div>
-          </motion.div>
+            <div className="mt-10">
+              <Image
+                src="/about.avif"
+                alt="Art School Reject - Behind the scenes"
+                width={700}
+                height={400}
+                className="w-full h-[500px] object-cover"
+              />
+              <p className="mt-3 font-bold text-sm tracking-widest">
+                artschool REJECT
+              </p>
+            </div>
+          </div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col gap-6 text-lg text-gray-800 order-first lg:order-last lg:w-1/2"
+            className="lg:mt-12 order-1 sm:order-2"
           >
-            <p>
-              ASR ArtSchool Reject is an independent creative collective of
-              young filmmakers, photographers, and designers known for our bold
-              aesthetics, conceptual depth, and distinct visual language.
-            </p>
-            <p>
-              With a modern creative mindset and an experimental artistic
-              spirit, we produce emotionally resonant works ranging from music
-              videos and fashion campaigns to brand content and conceptual art
-              projects.
-            </p>
-            <p>
-              Unbound by conventional styles, we approach each project with a
-              unique point of view blending technical expertise, visual
-              direction, and an understanding of brand context to deliver
-              meaningful and memorable visuals.
-            </p>
-            <p>
-              From concept development to post-production, we manage the
-              creative process with a strong focus on storytelling, tone, and
-              visual impact.
-            </p>
-            <p>
-              ASR is more than a crew; we are emerging visual creatives,
-              dedicated to shaping unique, expressive identities for every story
-              we help bring to life.
-            </p>
+            <h2 className="text-5xl flex flex-col md:text-5xl font-bold">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                Reject
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-gray-500"
+              >
+                the rules.
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="mt-2"
+              >
+                Rewrite
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="text-gray-500"
+              >
+                the vision.
+              </motion.div>
+            </h2>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              viewport={{ once: true }}
+              className="mt-10 space-y-2 text-lg text-justify text-gray-700 leading-relaxed"
+            >
+              <p>
+                Unbound by conventional styles, we approach each project with a
+                unique point of view blending technical expertise, visual
+                direction, and an understanding of brand context to deliver
+                meaningful and memorable visuals.
+              </p>
+              <p>
+                From concept development to post-production, we manage the
+                creative process with a strong focus on storytelling, tone, and
+                visual impact.
+              </p>
+              <p>
+                ASR is more than a crew; we are emerging visual creatives,
+                dedicated to shaping unique, expressive identities for every
+                story we help bring to life.
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -73,8 +73,22 @@ const WorkAnimate = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="py-24 border-t border-gray-200" ref={projectRef}>
+    <section className="py-10 border-t border-gray-200" ref={projectRef}>
       <div className="container mx-auto px-4">
+        <motion.div
+          className="flex items-center justify-between mb-12"
+          style={{
+            opacity: scrollYProgress >= 0.3 ? 1 : 0,
+            transform: `translateX(${
+              scrollYProgress >= 0.3 ? "0px" : "-100px"
+            })`,
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        >
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+            Latest Projects
+          </h2>
+        </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {categories.map((project) => (
             <motion.div

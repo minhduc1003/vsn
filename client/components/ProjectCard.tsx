@@ -18,10 +18,18 @@ const ProjectCard = ({ project }: { project: any }) => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
       <div className="absolute top-4 left-4">
         <span className="bg-black/50 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
-          {project.name}
+          {project.type}
         </span>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <div className="absolute bottom-0 right-0 p-3 sm:p-5 text-white w-[70%] sm:w-[80%] ">
+        <div className="flex flex-col items-end justify-end gap-1 text-sm font-semibold">
+          <div className="text-xl sm:text-2xl">{project.name}</div>
+          <div className="text-base sm:text-lg text-justify opacity-75 ">
+            {project.description}
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 0 p-5 text-white">
         <div className="flex justify-between items-end">
           {/* <p className="text-sm font-medium">{project.title}</p> */}
           <div className="flex items-center gap-1 text-sm font-semibold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">

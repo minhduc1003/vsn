@@ -8,7 +8,7 @@ import { categories } from "@/data/category";
 const Work = () => {
   return (
     <>
-      <main>
+      <main className="mt-10">
         <section className="bg-white py-24">
           <div className="max-w-[1200px] mx-auto px-4">
             <motion.div
@@ -18,11 +18,10 @@ const Work = () => {
               className="text-center mb-16"
             >
               <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-4">
-                My most recent work
+                RECENT WORK
               </h1>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Vibrant visuals that tell powerful stories ✨<br />
-                Projects from recent years captured across the globe.
+                Projects from recent years captured across the global✨
               </p>
             </motion.div>
 

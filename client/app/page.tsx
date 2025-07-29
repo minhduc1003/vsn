@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </section>
         <WorkAnimate />
-        <ServicesSection />
+        {/* <ServicesSection /> */}
         <AboutSection />
       </main>
     </>

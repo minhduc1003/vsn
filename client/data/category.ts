@@ -1,27 +1,34 @@
 export const categories = [
   {
     id: 1,
+    type: "Photo",
     name: "Campaign",
     description:
-      "Devices and gadgets including phones, laptops, and accessories.",
+      "From concept to visuals, the multi-platform communication campaign enabled the brand to tell its story consistently and compellingly.",
     imageUrl: "/Bacykism/Campaign-6.avif",
   },
   {
     id: 2,
+    type: "Photo",
     name: "Press",
-    description: "A wide range of books across various genres.",
+    description:
+      "Communication visuals and content that embody the brand’s spirit through refined composition, cohesive colors, and meticulously chosen language.",
     imageUrl: "/PETRICHOR/Press-2.avif",
   },
   {
     id: 3,
+    type: "Photo",
     name: "PhotoBooth",
-    description: "Fashionable clothing",
+    description:
+      "Fashion imagery curated by concept – honoring the brand identity through intentional layouts, lighting, and compelling visual narratives.",
     imageUrl: "/LIL-VAN/Press-1.avif",
   },
   {
     id: 4,
+    type: "Video",
     name: "Video",
-    description: "Engaging video content and production.",
+    description:
+      "Creative video production – from music videos, TVCs to short-form content – focusing on emotion, strong visuals, and a clear narrative flow.",
     imageUrl: "/LONCHORAWDENIM/campaign-1.avif",
   },
 ];
