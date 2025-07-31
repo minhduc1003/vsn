@@ -15,7 +15,7 @@ const ProjectDetail = () => {
   const [details, setDetails] = React.useState<any>(null);
   const type = params.type as string;
   console.log(type);
-  if (!["campaign", "press", "video", "photoBooth"].includes(type)) {
+  if (!["campaign", "press", "video", "lookbook"].includes(type)) {
     return <div>404 - Not Found</div>;
   }
 

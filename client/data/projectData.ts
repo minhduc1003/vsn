@@ -334,4 +334,50 @@ export const projectData = [
     description:
       "An architectural project that harmonizes modern design with environmental sustainability.",
   },
+  {
+    id: 2098312,
+    name: "LONCHO RAW DENIMS",
+    link: [
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-1.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-2.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-3.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-4.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-5.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-6.avif" },
+      { type: "image", url: "/LONCHO-RAW-DENIMS/lookbook-7.avif" },
+
+      { type: "video", url: "/LONCHO-RAW-DENIMS/lookbook-1.mp4" },
+    ],
+    firstImage: "/LONCHO-RAW-DENIMS/lookbook-1.avif",
+    category: "Lookbook",
+    description:
+      "A collaborative project that explores the intersection of art, architecture, and technology.",
+  },
+  {
+    id: 2198312,
+    name: "Winter 2024",
+    link: [
+      { type: "image", url: "/Winter24/lookbook-1.avif" },
+      { type: "image", url: "/Winter24/lookbook-2.avif" },
+      { type: "image", url: "/Winter24/lookbook-3.avif" },
+      { type: "image", url: "/Winter24/lookbook-4.avif" },
+      { type: "image", url: "/Winter24/lookbook-5.avif" },
+      { type: "image", url: "/Winter24/lookbook-6.avif" },
+      { type: "image", url: "/Winter24/lookbook-7.avif" },
+      { type: "image", url: "/Winter24/lookbook-8.avif" },
+      { type: "image", url: "/Winter24/lookbook-9.avif" },
+      { type: "image", url: "/Winter24/lookbook-10.avif" },
+      { type: "image", url: "/Winter24/lookbook-11.avif" },
+      { type: "image", url: "/Winter24/lookbook-12.avif" },
+      { type: "image", url: "/Winter24/lookbook-13.avif" },
+      { type: "image", url: "/Winter24/lookbook-14.avif" },
+      { type: "image", url: "/Winter24/lookbook-15.avif" },
+      { type: "image", url: "/Winter24/lookbook-16.avif" },
+      { type: "image", url: "/Winter24/lookbook-17.avif" },
+    ],
+    firstImage: "/Winter24/lookbook-1.avif",
+    category: "Lookbook",
+    description:
+      "A landmark project that integrates cutting-edge design with sustainable practices.",
+  },
 ];
