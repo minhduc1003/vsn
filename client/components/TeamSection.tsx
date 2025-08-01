@@ -21,7 +21,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
         href={`https://www.instagram.com/${handle}/`}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative w-full h-[300px] bg-gray-500 flex-shrink-0 hover:opacity-90 transition-opacity"
+        className="relative w-full h-[300px] bg-gray-500 flex-shrink-0 hover:opacity-90 transition-opacity z-10"
       >
         <Image
           src={`/team/${handle}.jpg`}
@@ -39,7 +39,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
         {role.map((line, index) => (
           <motion.p
             key={index}
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -150, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 0.7,
