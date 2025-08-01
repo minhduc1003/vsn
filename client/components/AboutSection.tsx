@@ -14,7 +14,7 @@ const AboutSection = () => {
     <section className="bg-white py-16 md:py-24 border-t border-gray-200">
       <div className="container mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
-          <div className="relative order-2 sm:order-1 lg:col-span-2">
+          <div className="relative order-2 lg:order-1 lg:col-span-2">
             <div className="absolute top-16  right-0 bg-white w-[70%] hidden md:block p-2">
               <div className="mt-4 text-base md:text-lg leading-relaxed">
                 <span
@@ -55,7 +55,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="lg:mt-12 order-1 sm:order-2"
+            className="lg:mt-12 order-1 lg:order-2"
           >
             <h2 className="text-3xl flex flex-col md:text-5xl font-bold text-right md:text-left">
               <motion.div
@@ -101,9 +101,9 @@ const AboutSection = () => {
               viewport={{ once: true }}
               className="block md:hidden"
             >
-              <div className="mt-4 text-lg text-[#77787B] leading-relaxed text-justify  ">
+              <div className="mt-4 text-lg leading-relaxed text-justify  ">
                 <span
-                  className="font-bold text-7xl float-left mr-3"
+                  className="font-bold text-6xl float-left mr-3"
                   style={{ lineHeight: "0.9" }}
                 >
                   A
@@ -113,7 +113,7 @@ const AboutSection = () => {
                 filmmakers, photographers, and designers known for our bold
                 aesthetics, conceptual depth, and distinct visual language.
               </div>
-              <p className="my-2 text-lg  text-[#77787B] leading-relaxed clear-left text-justify ">
+              <p className="my-2 text-lg  leading-relaxed clear-left text-justify ">
                 With a modern creative mindset and an experimental artistic
                 spirit, we produce emotionally resonant works ranging from music
                 videos and fashion campaigns to brand content and conceptual art
@@ -125,7 +125,7 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
               viewport={{ once: true }}
-              className=" space-y-2 text-lg text-justify text-gray-700 leading-relaxed"
+              className=" space-y-2 text-lg text-justify  leading-relaxed"
             >
               <p>
                 Unbound by conventional styles, we approach each project with a
