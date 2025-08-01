@@ -21,7 +21,7 @@ export const categories = [
     name: "Lookbook",
     description:
       "Fashion imagery curated by concept – honoring the brand identity through intentional layouts, lighting, and compelling visual narratives.",
-    imageUrl: "/LONCHO-RAW-DENIMS/lookbook-5.avif",
+    imageUrl: "/LONCHO-RAW-DENIMS/lookbook-1.avif",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const categories = [
     name: "Video",
     description:
       "Creative video production – from music videos, TVCs to short-form content – focusing on emotion, strong visuals, and a clear narrative flow.",
-    imageUrl: "/LONCHORAWDENIM/campaign-1.avif",
+    imageUrl: "/video.avif",
   },
 ];
 export type Category = {

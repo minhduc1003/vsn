@@ -16,10 +16,10 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
           <div className="relative order-2 sm:order-1 lg:col-span-2">
             <div className="absolute top-16  right-0 bg-white w-[70%] hidden md:block p-2">
-              <div className="mt-4 text-base leading-relaxed">
+              <div className="mt-4 text-base md:text-lg leading-relaxed">
                 <span
                   className="font-bold text-6xl float-left mr-3"
-                  style={{ lineHeight: "0.8" }}
+                  style={{ lineHeight: "0.9" }}
                 >
                   A
                 </span>
@@ -57,7 +57,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="lg:mt-12 order-1 sm:order-2"
           >
-            <h2 className="text-5xl flex flex-col md:text-5xl font-bold text-right md:text-left">
+            <h2 className="text-3xl flex flex-col md:text-5xl font-bold text-right md:text-left">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -104,7 +104,7 @@ const AboutSection = () => {
               <div className="mt-4 text-lg text-[#77787B] leading-relaxed text-justify  ">
                 <span
                   className="font-bold text-7xl float-left mr-3"
-                  style={{ lineHeight: "0.8" }}
+                  style={{ lineHeight: "0.9" }}
                 >
                   A
                 </span>

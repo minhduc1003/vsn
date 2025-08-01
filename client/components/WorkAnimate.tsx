@@ -108,16 +108,16 @@ const WorkAnimate = () => {
                     project.id < 3
                       ? scroll > 0
                         ? Math.min(
-                            -(300 + screenWidth * 0.2) * (1 - scrollYProgress),
+                            -(450 + screenWidth * 0.14) * (1 - scrollYProgress),
                             0
                           )
-                        : -(300 + screenWidth * 0.2)
+                        : -(450 + screenWidth * 0.14)
                       : scroll > 0
                       ? Math.min(
-                          -(800 + screenWidth * 0.21) * (1 - scrollYProgress),
+                          -(850 + screenWidth * 0.2) * (1 - scrollYProgress),
                           0
                         )
-                      : -(800 + screenWidth * 0.21)
+                      : -(850 + screenWidth * 0.2)
                   }px) 
                   rotate(${
                     project.id === 1
@@ -150,7 +150,7 @@ const WorkAnimate = () => {
                   width={800}
                   height={500}
                   className={`
-                  w-[800px] h-[500px] object-cover 
+                  w-[800px] h-[500px] object-fill
                   transition-transform duration-500 ease-in-out
                    ${
                      screenWidth < 768

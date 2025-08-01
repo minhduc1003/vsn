@@ -20,9 +20,6 @@ const Work = () => {
               <h1 className="text-6xl md:text-[65px] font-bold tracking-tighter leading-[45px]">
                 RECENT WORK
               </h1>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Projects from recent years captured across the global✨
-              </p>
             </motion.div>
 
             <motion.div

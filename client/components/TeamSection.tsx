@@ -62,7 +62,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 
 const TeamSection: React.FC = () => {
   return (
-    <div className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 mt-16">
+    <div className="py-20 px-4 sm:px-8 md:px-12 lg:px-20 mt-5">
       <div className="font-extrabold text-7xl tracking-tighter mb-6 flex justify-center items-center">
         ABOUT{" "}
         <motion.span
