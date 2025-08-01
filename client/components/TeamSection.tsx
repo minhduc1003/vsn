@@ -95,13 +95,13 @@ const TeamSection: React.FC = () => {
           <div></div>
           <TeamMemberCard
             handle="_nhaattt"
-            fullName="DON NGUYEN NHAT ANH"
+            fullName="DO NGUYEN NHAT ANH"
             role={["MANAGER"]}
           />
           <div></div>
           <TeamMemberCard
             handle="bopvsn"
-            fullName="DAJA HUNG"
+            fullName="LY GIA HUNG"
             role={["DIRECTOR", "OF PHOTOGRAPHY"]}
           />
           <div></div>
@@ -131,7 +131,7 @@ const TeamSection: React.FC = () => {
           {/* Row 5 */}
           <TeamMemberCard
             handle="henzy.swvg"
-            fullName="DANG DUY ANH"
+            fullName="DANG DUC HUY"
             role={["PERSONAL", "ASSISTANT"]}
           />
           <div></div>
