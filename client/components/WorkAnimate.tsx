@@ -91,7 +91,7 @@ const WorkAnimate = () => {
             Latest Projects
           </h2>
         </motion.div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {categories.map((project) => (
             <motion.div
               key={project.id}
@@ -108,16 +108,16 @@ const WorkAnimate = () => {
                     project.id < 3
                       ? scroll > 0
                         ? Math.min(
-                            -(500 + screenWidth * 0.14) * (1 - scrollYProgress),
+                            -(300 + screenWidth * 0.2) * (1 - scrollYProgress),
                             0
                           )
-                        : -(500 + screenWidth * 0.14)
+                        : -(300 + screenWidth * 0.2)
                       : scroll > 0
                       ? Math.min(
-                          -(850 + screenWidth * 0.2) * (1 - scrollYProgress),
+                          -(800 + screenWidth * 0.21) * (1 - scrollYProgress),
                           0
                         )
-                      : -(850 + screenWidth * 0.2)
+                      : -(800 + screenWidth * 0.21)
                   }px) 
                   rotate(${
                     project.id === 1

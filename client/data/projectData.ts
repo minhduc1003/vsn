@@ -328,6 +328,10 @@ export const projectData = [
         type: "video",
         url: "HOppd0XUe1A",
       },
+      {
+        type: "video",
+        url: "carQART85D0",
+      },
     ],
     firstImage: "/WALKING-on-the-Edge-X-LEFTHAND/Press-1.avif",
     category: "Video",

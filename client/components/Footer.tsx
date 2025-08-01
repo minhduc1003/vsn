@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="px-2 md:px-10">
         <div className="grid grid-cols-2 md:grid-cols-2 gap-8 items-center ">
           <div className="md:col-span-1 ">
-            <h3 className="text-sm tracking-widest text-gray-500 ">EMAIL</h3>
+            <h3 className="text-sm tracking-widest text-[#77787B] ">EMAIL</h3>
             <a href="mailto:artschoolreject.asr@gmail.com" className="text-lg ">
               artschoolreject.asr@gmail.com
             </a>
@@ -34,11 +34,11 @@ const Footer = () => {
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
               Reject
               <br />
-              <span className="text-gray-500">the rules.</span>
+              <span className="text-[#77787B]">the rules.</span>
               <br />
               Rewrite
               <br />
-              <span className="text-gray-500">the vision.</span>
+              <span className="text-[#77787B]">the vision.</span>
             </h2>
           </div>
         </div>

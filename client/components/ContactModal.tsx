@@ -87,9 +87,6 @@ const ContactModal = ({ onClose }: ContactModalProps) => {
           <h2 className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">
             Contact Us
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base">
-            Choose your preferred contact method
-          </p>
         </div>
 
         {!showEmailForm ? (

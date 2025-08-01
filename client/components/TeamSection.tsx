@@ -35,19 +35,24 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
           <p className="text-xs tracking-widest uppercase">{fullName}</p>
         </div>
       </Link>
-      <div className="text-gray-600 font-extrabold text-2xl tracking-tighter w-48">
+      <div className="text-[#77787B] font-extrabold text-2xl tracking-tighter w-48">
         {role.map((line, index) => (
           <motion.p
             key={index}
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
-              duration: 0.5,
-              delay: index * 0.2,
+              duration: 0.7,
+              delay: index * 0.4,
               ease: "easeOut",
             }}
+            className="w-[500px]"
           >
-            {line}
+            {index === 0 ? (
+              <span className="text-black">{line}</span>
+            ) : (
+              <span>{line}</span>
+            )}
           </motion.p>
         ))}
       </div>
@@ -64,7 +69,7 @@ const TeamSection: React.FC = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="text-gray-600 m-3"
+          className="text-[#77787B] m-3"
         >
           US
         </motion.span>
@@ -97,7 +102,7 @@ const TeamSection: React.FC = () => {
           <TeamMemberCard
             handle="bopvsn"
             fullName="DAJA HUNG"
-            role={["DIRECTOR", "OF", "PHOTOGRAPHY"]}
+            role={["DIRECTOR", "OF PHOTOGRAPHY"]}
           />
           <div></div>
 
@@ -141,14 +146,14 @@ const TeamSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute top-[880px] lg:top-[650px] w-full lg:w-[450px] right-0 text-right"
+          className="absolute top-[1100px]  w-full lg:w-[450px] right-0 text-right"
         >
           <motion.h2
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-extrabold text-5xl tracking-tighter mb-6"
+            className="font-extrabold text-5xl  mb-6 tracking-[-6px]"
           >
             ABOUT ASR
           </motion.h2>

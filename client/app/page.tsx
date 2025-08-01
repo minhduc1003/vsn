@@ -23,7 +23,7 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
-                <span className="text-gray-600">ASR</span>
+                <span className="text-[#77787B]">ASR</span>
                 <br />
                 ArtSchool Reject
               </h1>
@@ -42,13 +42,9 @@ export default function Home() {
                 onClick={() => openModal()}
                 className="w-fit inline-flex items-center gap-3 bg-black text-white font-medium rounded-full px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-gray-800 hover:scale-105 active:scale-95"
               >
-                <Image
-                  src="/ava.avif"
-                  alt="Vsn's avatar"
-                  width={24}
-                  height={24}
-                  className="rounded-full border-2 border-gray-600 sm:w-[28px] sm:h-[28px]"
-                />
+                <div className="rounded-full border-3 border-white p-2 w-10 h-10 flex items-center justify-center">
+                  asr
+                </div>
                 <span>Send me a message</span>
               </div>
             </div>
