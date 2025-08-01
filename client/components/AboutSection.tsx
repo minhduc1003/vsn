@@ -15,7 +15,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
           <div className="relative order-2 sm:order-1 lg:col-span-2">
-            <div className="absolute top-20  right-0 bg-white w-[70%] hidden md:block">
+            <div className="absolute top-20  right-0 bg-white w-[70%] hidden md:block p-2">
               <div className="mt-4 text-base  text-gray-800 leading-relaxed">
                 <span
                   className="font-bold text-7xl float-left mr-3"
