@@ -18,7 +18,7 @@ const Work = () => {
               className="text-center mb-16"
             >
               <h1 className="text-6xl md:text-[65px] font-bold tracking-tighter leading-[45px]">
-                RECENT WORK
+                CURATED PICKS
               </h1>
             </motion.div>
 
