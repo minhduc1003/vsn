@@ -30,7 +30,7 @@ const Footer = () => {
             </div> */}
           </div>
 
-          <div className="md:col-span-1 text-right">
+          <div className="md:col-span-1 text-right hidden md:block">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
               Reject
               <br />

@@ -5,7 +5,7 @@ export const categories = [
     name: "Campaign",
     description:
       "From concept to visuals, the multi-platform communication campaign enabled the brand to tell its story consistently and compellingly.",
-    imageUrl: "/Bacykism/Campaign-6.avif",
+    imageUrl: "/LONCHORAWDENIM/campaign-1.avif",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const categories = [
     name: "Press",
     description:
       "Communication visuals and content that embody the brand’s spirit through refined composition, cohesive colors, and meticulously chosen language.",
-    imageUrl: "/PETRICHOR/Press-2.avif",
+    imageUrl: "/DANGRANGTO/Press-2.avif",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const categories = [
     name: "Lookbook",
     description:
       "Fashion imagery curated by concept – honoring the brand identity through intentional layouts, lighting, and compelling visual narratives.",
-    imageUrl: "/LIL-VAN/Press-1.avif",
+    imageUrl: "/LONCHO-RAW-DENIMS/lookbook-5.avif",
   },
   {
     id: 4,

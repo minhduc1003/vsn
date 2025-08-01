@@ -13,7 +13,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         alt={`Project: ${project.name}`}
         width={800}
         height={400}
-        className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+        className="w-[800px] h-[400px] object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
       <div className="absolute top-4 left-4">

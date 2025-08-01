@@ -102,22 +102,22 @@ const WorkAnimate = () => {
                   translateX(${
                     project.id % 2 === 0
                       ? 0
-                      : screenWidth * 0.5 - scrollYProgress * screenWidth * 0.5
+                      : screenWidth * 0.4 - scrollYProgress * screenWidth * 0.4
                   }px) 
                   translateY(${
                     project.id < 3
                       ? scroll > 0
                         ? Math.min(
-                            -(400 + screenWidth * 0.14) * (1 - scrollYProgress),
+                            -(500 + screenWidth * 0.14) * (1 - scrollYProgress),
                             0
                           )
-                        : -(400 + screenWidth * 0.14)
+                        : -(500 + screenWidth * 0.14)
                       : scroll > 0
                       ? Math.min(
-                          -(750 + screenWidth * 0.2) * (1 - scrollYProgress),
+                          -(850 + screenWidth * 0.2) * (1 - scrollYProgress),
                           0
                         )
-                      : -(750 + screenWidth * 0.2)
+                      : -(850 + screenWidth * 0.2)
                   }px) 
                   rotate(${
                     project.id === 1
@@ -150,7 +150,7 @@ const WorkAnimate = () => {
                   width={800}
                   height={500}
                   className={`
-                  w-full h-full object-cover 
+                  w-[800px] h-[500px] object-cover 
                   transition-transform duration-500 ease-in-out
                    ${
                      screenWidth < 768
@@ -179,7 +179,7 @@ const WorkAnimate = () => {
                       : ""
                   }`}
                 >
-                  <span className="bg-black/50 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
+                  <span className="bg-black/50 text-white text-lg font-semibold px-4 opacity-80 py-1 rounded-full backdrop-blur-sm">
                     {project.name}
                   </span>
                 </div>

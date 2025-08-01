@@ -10,7 +10,7 @@ const Work = () => {
     <>
       <main className="mt-10">
         <section className="bg-white py-24">
-          <div className="max-w-[1200px] mx-auto px-4">
+          <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
