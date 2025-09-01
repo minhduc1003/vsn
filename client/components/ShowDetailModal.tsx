@@ -36,10 +36,25 @@ const ShowDetailModal = ({
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose(null);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
   return (
     <>
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
-        <div className="bg-white rounded-lg w-11/12 md:w-[90%] lg:w-[95%] max-h-[90vh] shadow-xl">
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/30"
+        onClick={() => onClose(null)}
+      >
+        <div
+          className="bg-white rounded-lg w-11/12 md:w-[90%] lg:w-[95%] max-h-[90vh] shadow-xl"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="relative">
             <h3 className="text-xl font-semibold absolute top-[40px] left-5 ">
               {project?.name || "Project Details"}

@@ -25,12 +25,12 @@ const ProjectCard = ({ project }: { project: any }) => {
           {project.type}
         </span>
       </div>
-      <div className="absolute bottom-0 right-0 p-3 sm:p-5 text-white w-[60%] sm:w-[70%] ">
+      <div className="absolute bottom-0 right-0 p-3 sm:p-5 text-white w-[60%] ">
         <div className="flex flex-col items-end justify-end gap-1 text-sm font-semibold">
           <div className="text-xl sm:text-3xl font-bold tracking-[-3px]">
             {project.name}
           </div>
-          <div className="text-base font-medium text-justify opacity-75 break-all">
+          <div className="text-base font-medium text-justify opacity-75 break-keep break-words whitespace-normal">
             {project.description}
           </div>
         </div>
