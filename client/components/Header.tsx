@@ -32,7 +32,7 @@ const Header = () => {
           </Link>
           <Link
             href="/aboutUs"
-            className={`text-sm  font-medium text-gray-600 hover:text-black transition-colors ${
+            className={`text-sm  font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap ${
               pathname === "/aboutUs" ? "border-b-2 border-black" : ""
             }`}
           >

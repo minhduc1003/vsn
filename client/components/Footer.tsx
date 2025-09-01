@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black text-white relative ">
-      <div className="text-gray-500 text-[11.4vw] leading-[0.8] font-extrabold opacity-20 whitespace-nowrap overflow-hidden py-10">
+      <div className="text-gray-500 text-[10vw] leading-[0.8] font-extrabold opacity-20 whitespace-nowrap overflow-hidden py-10">
         artschool REJECT
       </div>
       <div className="px-2 md:px-10">
