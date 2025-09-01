@@ -39,7 +39,7 @@ const Header = () => {
             About Us
           </Link>
           <div
-            className={`text-sm  bg-white text-black px-6 py-2 rounded-full shadow-sm border border-gray-200 hover:bg-gray-100 transition-all font-bold `}
+            className={`text-sm  bg-white text-black px-6 py-2 rounded-full shadow-sm border border-gray-200 hover:bg-gray-100 transition-all font-bold cursor-pointer`}
             onClick={openModal}
           >
             Contact

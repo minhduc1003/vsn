@@ -21,13 +21,6 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["motion"],
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(avif|webp)$/,
-      type: "asset/resource",
-    });
-    return config;
-  },
 };
 
 export default nextConfig;

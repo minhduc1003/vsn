@@ -20,7 +20,7 @@ const ContactSection = () => {
               inline-flex items-center gap-3 bg-black text-white
               font-semibold rounded-full px-6 py-3 shadow-lg
               hover:bg-gray-800 hover:scale-105 active:scale-100
-              transition-all duration-300
+              transition-all duration-300 cursor-pointer
             "
           >
             <HiOutlineMail className="text-xl" />

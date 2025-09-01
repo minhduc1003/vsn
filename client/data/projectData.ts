@@ -137,7 +137,7 @@ export const projectData = [
   },
   {
     id: 9901932,
-    name: "DANGRANGTO X LEFTHAND",
+    name: "CLZ X LILVAN",
     link: [
       { type: "image", url: "/LIL-VAN/Press-1.avif" },
       { type: "image", url: "/LIL-VAN/Press-2.avif" },
@@ -292,6 +292,22 @@ export const projectData = [
       {
         type: "video",
         url: "0iCEqX8ZnC0",
+      },
+      {
+        type: "video",
+        url: "0AcFa5GP2pA",
+      },
+      {
+        type: "video",
+        url: "alf8VpY-vdo",
+      },
+      {
+        type: "video",
+        url: "JZMQBxgqrQE",
+      },
+      {
+        type: "video",
+        url: "A06EJETqIjY",
       },
     ],
     firstImage: "/WALKING-on-the-Edge-X-LEFTHAND/Press-1.avif",

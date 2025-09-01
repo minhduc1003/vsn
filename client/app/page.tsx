@@ -40,7 +40,7 @@ export default function Home() {
 
               <div
                 onClick={() => openModal()}
-                className="w-fit inline-flex items-center gap-3 bg-black text-white font-medium rounded-full px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-gray-800 hover:scale-105 active:scale-95"
+                className="w-fit inline-flex items-center gap-3 bg-black text-white font-medium rounded-full px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base transition-all duration-300 hover:bg-gray-800 hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <div className="rounded-full border-3 border-white p-2 w-10 h-10 flex items-center justify-center">
                   asr

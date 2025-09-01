@@ -4,7 +4,6 @@ import React, { useState, FormEvent, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { FiSend } from "react-icons/fi";
 import { FaEnvelope, FaInstagram } from "react-icons/fa";
-import { SiZalo } from "react-icons/si";
 import emailjs from "emailjs-com";
 
 interface ContactModalProps {
@@ -20,12 +19,8 @@ const ContactModal = ({ onClose }: ContactModalProps) => {
     message: "",
   });
 
-  const handleZaloClick = () => {
-    window.open("https://zalo.me/your-zalo-id", "_blank");
-  };
-
   const handleInstagramClick = () => {
-    window.open("https://instagram.com/your-instagram", "_blank");
+    window.open("https://www.instagram.com/asr.artschoolreject/", "_blank");
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -33,15 +28,15 @@ const ContactModal = ({ onClose }: ContactModalProps) => {
 
     try {
       await emailjs.send(
-        "service_kglyon7",
-        "template_8q0rcbe",
+        "service_6xwj0bl",
+        "template_5dmb0e7",
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "S2SJvtwSwe4KwnFUL"
+        "BWnt5bunij1CTDsR0"
       );
 
       alert("Thank you for your message!");
@@ -90,20 +85,13 @@ const ContactModal = ({ onClose }: ContactModalProps) => {
         </div>
 
         {!showEmailForm ? (
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <button
               onClick={() => setShowEmailForm(true)}
               className="flex flex-col items-center p-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
             >
               <FaEnvelope size={24} />
               <span className="mt-2">Email</span>
-            </button>
-            <button
-              onClick={handleZaloClick}
-              className="flex flex-col items-center p-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-            >
-              <SiZalo size={24} />
-              <span className="mt-2">Zalo</span>
             </button>
             <button
               onClick={handleInstagramClick}
