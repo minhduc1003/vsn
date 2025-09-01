@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: { project: any }) => {
           {project.type}
         </span>
       </div>
-      <div className="absolute bottom-0 right-0 p-3 sm:p-5 text-white w-[60%] ">
+      <div className="absolute bottom-0 right-0 p-3 sm:p-5 text-white w-[75%] ">
         <div className="flex flex-col items-end justify-end gap-1 text-sm font-semibold">
           <div className="text-xl sm:text-3xl font-bold tracking-[-3px]">
             {project.name}
