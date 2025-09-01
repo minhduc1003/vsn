@@ -121,7 +121,7 @@ const TeamSection: React.FC = () => {
           <div></div>
           <TeamMemberCard
             handle="khoinguyeenx"
-            fullName="NGUYEN MINH KHOI"
+            fullName="NGUYEN TRINH MINH KHOI"
             role={["DIRECTOR"]}
           />
           <div></div>

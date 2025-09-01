@@ -7,7 +7,7 @@ import Image from "next/image";
 interface TeamMemberCardMobileProps {
   handle: string;
   fullName: string;
-  role: string[];
+  role: string;
 }
 
 const TeamMemberCardMobile: React.FC<TeamMemberCardMobileProps> = ({
@@ -39,30 +39,22 @@ const TeamMemberCardMobile: React.FC<TeamMemberCardMobileProps> = ({
         <div className="absolute bottom-3 left-3 text-white">
           <p className="font-semibold text-base">{handle}</p>
           <p className="text-sm tracking-widest uppercase">{fullName}</p>
+          <div className="text-white font-bold text-xl tracking-tighter">
+            <motion.p
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+              }}
+              className="mb-1"
+            >
+              <span className="text-white">{role}</span>
+            </motion.p>
+          </div>
         </div>
       </Link>
-      <div className="text-[#77787B] font-extrabold text-xl tracking-tighter">
-        {role.map((line, index) => (
-          <motion.p
-            key={index}
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{
-              duration: 0.5,
-              delay: index * 0.2,
-              ease: "easeOut",
-            }}
-            className="mb-1"
-          >
-            {index === 0 ? (
-              <span className="text-black">{line}</span>
-            ) : (
-              <span>{line}</span>
-            )}
-          </motion.p>
-        ))}
-      </div>
     </motion.div>
   );
 };
@@ -72,37 +64,37 @@ const TeamSectionMobile: React.FC = () => {
     {
       handle: "trstnvsn",
       fullName: "TRISTAN SIM CHONG HAN",
-      role: ["CREATIVE", "DIRECTION"],
+      role: "CREATIVE DIRECTION",
     },
     {
       handle: "eemptyvsn",
       fullName: "NGUYEN TIEN HUY HOANG",
-      role: ["PHOTOGRAPHER", "GRAPHIC DESIGNER"],
+      role: "PHOTOGRAPHER GRAPHIC DESIGNER",
     },
     {
       handle: "_nhaattt",
       fullName: "DO NGUYEN NHAT ANH",
-      role: ["MANAGER"],
+      role: "MANAGER",
     },
     {
       handle: "bopvsn",
       fullName: "LY GIA HUNG",
-      role: ["DIRECTOR", "OF PHOTOGRAPHY"],
+      role: "DIRECTOR OF PHOTOGRAPHY",
     },
     {
       handle: "bdpa._",
       fullName: "BUI DANG PHUONG ANH",
-      role: ["PRODUCER"],
+      role: "PRODUCER",
     },
     {
       handle: "khoinguyeenx",
-      fullName: "NGUYEN MINH KHOI",
-      role: ["DIRECTOR"],
+      fullName: "NGUYEN TRINH MINH KHOI",
+      role: "DIRECTOR",
     },
     {
       handle: "henzy.swvg",
       fullName: "DANG DUC HUY",
-      role: ["PERSONAL", "ASSISTANT"],
+      role: "PERSONAL ASSISTANT",
     },
   ];
 
@@ -175,7 +167,7 @@ const TeamSectionMobile: React.FC = () => {
       </motion.div>
 
       {/* Team Members Grid */}
-      <div className="space-y-6 mb-12">
+      <div className="space-y-6">
         {teamMembers.map((member, index) => (
           <TeamMemberCardMobile
             key={member.handle}
