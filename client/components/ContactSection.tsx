@@ -24,7 +24,7 @@ const ContactSection = () => {
             "
           >
             <HiOutlineMail className="text-xl" />
-            <span>Email Me</span>
+            <span>Send me a message</span>
           </div>
         </div>
       </div>

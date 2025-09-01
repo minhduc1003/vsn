@@ -13,10 +13,11 @@ const Header = () => {
         <Link href="/" className="flex items-center space-x-3 mr-6">
           <Image
             src="/logo.png"
-            alt="Vsnyen Logo"
+            alt="Logo"
             width={50}
             height={50}
-            className="rounded-full"
+            loading="lazy"
+            className="rounded-full "
           />
         </Link>
 

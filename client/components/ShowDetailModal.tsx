@@ -41,7 +41,7 @@ const ShowDetailModal = ({
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
         <div className="bg-white rounded-lg w-11/12 md:w-[90%] lg:w-[95%] max-h-[90vh] shadow-xl">
           <div className="relative">
-            <h3 className="text-xl font-semibold absolute top-[40px] left-5 max-w-[50px]">
+            <h3 className="text-xl font-semibold absolute top-[40px] left-5 ">
               {project?.name || "Project Details"}
             </h3>
 
@@ -123,8 +123,11 @@ const ShowDetailModal = ({
                         alt={`Image ${index + 1}`}
                         width={288}
                         height={288}
-                        className="object-cover cursor-pointer rounded hover:opacity-90 transition-opacity flex-shrink-0"
+                        className="object-cover cursor-pointer rounded hover:opacity-90 transition-opacity flex-shrink-0 next-image"
                         priority={index < 4}
+                        quality={90}
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                         onClick={() => {
                           setSelectedImage(image);
                           setCurrentIndex(index);
